@@ -22,13 +22,13 @@ let NewsController = class NewsController {
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], NewsController.prototype, "index", null);
 NewsController = __decorate([
-    common_1.Controller('admin/news'),
+    (0, common_1.Controller)('admin/news'),
     __metadata("design:paramtypes", [article_service_1.ArticleService])
 ], NewsController);
 exports.NewsController = NewsController;

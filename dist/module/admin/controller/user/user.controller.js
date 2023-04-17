@@ -17,13 +17,13 @@ let UserController = class UserController {
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], UserController.prototype, "index", null);
 UserController = __decorate([
-    common_1.Controller('admin/user')
+    (0, common_1.Controller)('admin/user')
 ], UserController);
 exports.UserController = UserController;
 //# sourceMappingURL=user.controller.js.map

@@ -17,13 +17,13 @@ let NewsController = class NewsController {
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], NewsController.prototype, "index", null);
 NewsController = __decorate([
-    common_1.Controller('news')
+    (0, common_1.Controller)('news')
 ], NewsController);
 exports.NewsController = NewsController;
 //# sourceMappingURL=news.controller.js.map

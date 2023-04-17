@@ -22,52 +22,54 @@ let NavController = class NavController {
     }
     async doAdd() {
         var result = await this.navService.add({
-            title: "新增的导航222",
-            url: "http://itying.com",
-            status: 1
+            title: '新增的导航222',
+            url: 'http://sayo.com',
+            status: 1,
         });
         return result;
     }
     async doUpdate() {
         var result = await this.navService.update({
-            _id: "5d8330c9aa16ed2f681cafb4"
+            _id: '5af96dbf34cdff24b88a2053',
         }, {
-            title: "大地专栏",
-            url: "http://bbs.itying.com"
+            title: '大地专栏',
+            url: 'http://bbs.itying.com',
         });
         return result;
     }
     async doDelete() {
-        var result = await this.navService.delete({ _id: "5aea853a418a7d26d499d623" });
+        var result = await this.navService.delete({
+            _id: '5aea853a418a7d26d499d623 ',
+        });
         return result;
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], NavController.prototype, "index", null);
 __decorate([
-    common_1.Get('add'),
+    (0, common_1.Get)('add'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], NavController.prototype, "doAdd", null);
 __decorate([
-    common_1.Get('update'),
+    (0, common_1.Get)('update'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], NavController.prototype, "doUpdate", null);
 __decorate([
-    common_1.Get('delete'),
+    (0, common_1.Get)('delete'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", Promise)
 ], NavController.prototype, "doDelete", null);
 NavController = __decorate([
-    common_1.Controller('admin/nav'),
+    (0, common_1.Controller)('admin/nav'),
     __metadata("design:paramtypes", [nav_service_1.NavService])
 ], NavController);
 exports.NavController = NavController;

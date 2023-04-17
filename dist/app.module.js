@@ -17,13 +17,15 @@ const mongoose_1 = require("@nestjs/mongoose");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
-    common_1.Module({
+    (0, common_1.Module)({
         imports: [
-            admin_module_1.AdminModule, api_module_1.ApiModule, default_module_1.DefaultModule,
-            mongoose_1.MongooseModule.forRoot("mongodb://127.0.0.1:27017/koa")
+            admin_module_1.AdminModule,
+            api_module_1.ApiModule,
+            default_module_1.DefaultModule,
+            mongoose_1.MongooseModule.forRoot('mongodb://127.0.0.1:27017/koa'),
         ],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService]
+        providers: [app_service_1.AppService],
     })
 ], AppModule);
 exports.AppModule = AppModule;

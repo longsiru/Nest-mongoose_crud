@@ -25,8 +25,8 @@ let ArticleService = class ArticleService {
     }
 };
 ArticleService = __decorate([
-    common_1.Injectable(),
-    __param(0, mongoose_1.InjectModel('Article')),
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Article')),
     __metadata("design:paramtypes", [Object])
 ], ArticleService);
 exports.ArticleService = ArticleService;

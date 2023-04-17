@@ -12,7 +12,7 @@ const news_controller_1 = require("./controller/news/news.controller");
 let DefaultModule = class DefaultModule {
 };
 DefaultModule = __decorate([
-    common_1.Module({
+    (0, common_1.Module)({
         controllers: [news_controller_1.NewsController]
     })
 ], DefaultModule);

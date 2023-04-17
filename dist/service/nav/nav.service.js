@@ -38,8 +38,8 @@ let NavService = class NavService {
     }
 };
 NavService = __decorate([
-    common_1.Injectable(),
-    __param(0, mongoose_1.InjectModel('Nav')),
+    (0, common_1.Injectable)(),
+    __param(0, (0, mongoose_1.InjectModel)('Nav')),
     __metadata("design:paramtypes", [Object])
 ], NavService);
 exports.NavService = NavService;

@@ -19,7 +19,7 @@ const nav_service_1 = require("../../service/nav/nav.service");
 let AdminModule = class AdminModule {
 };
 AdminModule = __decorate([
-    common_1.Module({
+    (0, common_1.Module)({
         imports: [mongoose_1.MongooseModule.forFeature([
                 {
                     name: "Article",

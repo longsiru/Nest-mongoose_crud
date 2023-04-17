@@ -23,25 +23,25 @@ let ApiController = class ApiController {
     }
 };
 __decorate([
-    common_1.Get(),
+    (0, common_1.Get)(),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], ApiController.prototype, "index", null);
 __decorate([
-    common_1.Get('user'),
+    (0, common_1.Get)('user'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], ApiController.prototype, "userIndex", null);
 __decorate([
-    common_1.Get('news'),
+    (0, common_1.Get)('news'),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", []),
     __metadata("design:returntype", void 0)
 ], ApiController.prototype, "newsIndex", null);
 ApiController = __decorate([
-    common_1.Controller('api')
+    (0, common_1.Controller)('api')
 ], ApiController);
 exports.ApiController = ApiController;
 //# sourceMappingURL=api.controller.js.map

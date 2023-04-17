@@ -12,7 +12,7 @@ const api_controller_1 = require("./api.controller");
 let ApiModule = class ApiModule {
 };
 ApiModule = __decorate([
-    common_1.Module({
+    (0, common_1.Module)({
         controllers: [api_controller_1.ApiController]
     })
 ], ApiModule);
