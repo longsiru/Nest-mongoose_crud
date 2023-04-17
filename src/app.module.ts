@@ -10,10 +10,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    AdminModule, ApiModule, DefaultModule,
-    MongooseModule.forRoot("mongodb://127.0.0.1:27017/koa")
+    AdminModule,
+    ApiModule,
+    DefaultModule,
+    MongooseModule.forRoot('mongodb://127.0.0.1:27017/koa'), //1.配置数据库连接//2.去要操作的controller所属的module配置数据库模型。
   ],
   controllers: [AppController],
-  providers: [AppService]  
+  providers: [AppService],
 })
 export class AppModule {}
